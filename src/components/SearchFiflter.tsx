@@ -1,7 +1,7 @@
-import React, { ChangeEvent } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setFilter } from '../redux/userSlice';
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 const SearchContainer = styled.div`
   display: flex;
