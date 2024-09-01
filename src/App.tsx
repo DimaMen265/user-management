@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchUsers } from './redux/userSlice';
+import { AppDispatch } from './redux/store';
+import { UserTable } from './components/UserTable';
+import { SearchFilter } from './components/SearchFiflter';
+import { styled } from 'styled-components';
 
-function App() {
+const Container = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+`;
+
+export const App: React.FC = () => {
+  const dispatch = useDispatch<AppDispatch>();
+  
+  useEffect(() => {
+    dispatch(fetchUsers());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <h1>User Management Table</h1>
+      <SearchFilter />
+      <UserTable />
+    </Container>
+  )
 }
-
-export default App;
