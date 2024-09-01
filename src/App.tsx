@@ -22,7 +22,7 @@ export const App: React.FC = () => {
 
   return (
     <Container>
-      <h1>User Management Table</h1>
+      <h1>User management table</h1>
       <SearchFilter />
       <UserTable />
     </Container>
