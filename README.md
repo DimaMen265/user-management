@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# User Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Українська | Ukrainian
 
-## Available Scripts
+У файлі userSlise прописав запит для отримання інформації користувачів із бази даних.
+Для запиту використав бібліотеку axios.
 
-In the project directory, you can run:
+Також в цьому файлі знаходиться функція для зміни даних під час фітрації, коли користувач вводить в поля пошуку значення.
+Поля пошуку розмістив під заголовками стовпців таблиці.
+Для зміни стану використав redux/toolkit
 
-### `npm start`
+Крім того, я додав мінімальну стилізацію для легкого використання таблиці.
+Для стилізації використав бібліотеку styled-components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Англійська | English
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In file 'user' wrote request for get info users from data base.
+For request used library axios.
 
-### `npm test`
+Also, in this file there is function for change state during filtering, when user enters value in search field.
+Search fields placed under column title.
+For change state used library redux/toolkit.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Also, I added minimal styling for using table easy.
+For styling used library styled-components
