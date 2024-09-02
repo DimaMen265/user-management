@@ -14,7 +14,7 @@
 
 ## Англійська | English
 
-In file 'user' wrote request for get info users from data base.
+In file 'userSlice' wrote request for get info users from data base.
 For request used library axios.
 
 Also, in this file there is function for change state during filtering, when user enters value in search field.
