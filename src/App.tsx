@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { fetchUsers } from './redux/userSlice';
 import { AppDispatch } from './redux/store';
 import { UserTable } from './components/UserTable';
-import { SearchFilter } from './components/SearchFiflter';
 import { styled } from 'styled-components';
 
 const Container = styled.div`
@@ -11,6 +10,10 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+`;
+
+const Title = styled.h1`
+  font-weight: 500;
 `;
 
 export const App: React.FC = () => {
@@ -22,8 +25,7 @@ export const App: React.FC = () => {
 
   return (
     <Container>
-      <h1>User management table</h1>
-      <SearchFilter />
+      <Title>User Management Table</Title>
       <UserTable />
     </Container>
   )
